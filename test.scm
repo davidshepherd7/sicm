@@ -12,3 +12,6 @@
       (literal-function 'z)))
 
 (print-expression (q 't))
+
+(define (Lagrangian-action L q t1 t2)
+  (definite-integral (compose L (Gamma q)) t1 t2))

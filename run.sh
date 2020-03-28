@@ -51,7 +51,7 @@ export MITSCHEME_HEAP_SIZE=100000
 
 
 if [ -z "$file" ]; then
-    rlwrap mit-scheme --quiet --eval '(load "compile")' --eval '(load "load")' "$@"
+    rlwrap mit-scheme --quiet --eval '(load "compile")' --eval '(load "load")'
 else
-    mit-scheme --quiet --eval '(load "compile")' --eval '(load "load")' "$@" < "$file"
+    mit-scheme --quiet --eval '(load "compile")' --eval '(load "load")' < "$file"
 fi
